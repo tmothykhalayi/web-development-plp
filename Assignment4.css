@@ -1,0 +1,91 @@
+/* styles.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+
+nav ul li a.active {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Main Layout */
+main {
+    display: block;
+    padding: 20px;
+}
+
+/* Page Sections */
+.page {
+    display: none; /* Hide all sections by default */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .page {
+        padding: 15px;
+    }
+}
