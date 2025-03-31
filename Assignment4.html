@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Design with Flexbox and Grid</title>
+  <link rel="stylesheet" href="Assignment4.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
 
-    <main>
-        <!-- Home Page Section -->
-        <section id="home" class="page">
-            <h1>Welcome to Our Website</h1>
-            <p>This is a demo webpage with a flexible layout that adjusts to different screen sizes.</p>
-        </section>
+  <!-- Main Content Section -->
+  <div class="container">
+    <div class="item">
+      <h2>Welcome to Our Website</h2>
+      <p>We provide high-quality services to help you achieve your business goals. Our team is dedicated to delivering exceptional results and ensuring client satisfaction.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=Service+Image" alt="Service Image">
+    </div>
 
-        <!-- About Page Section -->
-        <section id="about" class="page">
-            <h1>About Us</h1>
-            <p>We are a company focused on providing high-quality services to our customers.</p>
-            <p>Our mission is to deliver exceptional products and services that exceed customer expectations.</p>
-        </section>
-    </main>
+    <div class="item">
+      <h2>Our Services</h2>
+      <p>We offer a wide range of services including web design, development, digital marketing, and SEO optimization. Whether you're starting a new business or looking to improve an existing one, we have the expertise to help you succeed.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=Services+Image" alt="Services Image">
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Company Name</p>
-    </footer>
+    <div class="item">
+      <h2>About Us</h2>
+      <p>Our company was founded with the goal of providing top-notch services to businesses of all sizes. We are a passionate team of professionals committed to delivering the best possible solutions for our clients.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=About+Us+Image" alt="About Us Image">
+    </div>
 
-    </body>
+    <div class="item">
+      <h2>Our Process</h2>
+      <p>We follow a detailed and systematic approach to ensure the success of each project. From initial consultation to final delivery, we work closely with clients to meet their objectives.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=Process+Image" alt="Process Image">
+    </div>
+
+    <div class="item">
+      <h2>Customer Testimonials</h2>
+      <p>"This team exceeded our expectations! They delivered on time, within budget, and the results were outstanding."</p>
+      <p>- Jane Doe, CEO of ABC Corp.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=Testimonial+Image" alt="Testimonial Image">
+    </div>
+
+    <div class="item">
+      <h2>Contact Us</h2>
+      <p>If you're interested in our services, please reach out to us. We would love to hear from you and discuss how we can help you with your project.</p>
+      <img src="https://via.placeholder.com/150/0000FF/808080?Text=Contact+Image" alt="Contact Image">
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Website | All rights reserved</p>
+  </footer>
+</body>
 </html>

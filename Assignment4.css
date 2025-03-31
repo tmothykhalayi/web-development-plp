@@ -1,91 +1,83 @@
-/* styles.css */
-
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body */
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-}
-
-/* Header & Navigation */
-header {
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  /* Navigation Bar */
+  nav {
     background-color: #333;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 10px 15px;
-}
-
-nav ul li a.active {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-/* Main Layout */
-main {
-    display: block;
-    padding: 20px;
-}
-
-/* Page Sections */
-.page {
-    display: none; /* Hide all sections by default */
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* Footer */
-footer {
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Layout (Flexbox or Grid) */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item h2 {
+    color: #333;
+  }
+  
+  .item p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .item img {
+    margin-top: 15px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Footer */
+  footer {
     background-color: #333;
     color: white;
-}
-
-/* Responsive Layout */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
     }
-
-    nav ul li {
-        margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr; /* Single column on mobile */
     }
-
-    nav ul li a {
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    nav ul li a {
-        padding: 8px 12px;
-    }
-
-    .page {
-        padding: 15px;
-    }
-}
+  }
+  
